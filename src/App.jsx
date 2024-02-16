@@ -30,7 +30,7 @@ const App = () => {
     <>
       <Toaster />
       {loading ? <Loader /> : ""}
-      <Navbar />
+    {isAuthenticated ? <Navbar /> : ""}
       <Outlet />
     </>
   );
